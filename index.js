@@ -8,7 +8,7 @@ app.get('/',(req,res)=>{
     res.send("yeah sever is run")
 })
 
-// Using ExpresssJon for Reading Data
+// Using Body Parser for Reading Data
 app.use(expres.urlencoded({extended:true}));
 app.use(expres.json())
 
@@ -26,3 +26,5 @@ app.listen(port,function(err){
     }
     console.log("Server is run on port::",port);
 })
+
+// It is a a cloud based Bus Pass Service API's

@@ -14,6 +14,7 @@ module.exports.Register = async function(req,res){
         faculty:req.body.faculty
       })  
       const user = await new_user.save();
+      console.log(user);
       return res.status(200).json({
         message:"Registered Succssfully",
         user
